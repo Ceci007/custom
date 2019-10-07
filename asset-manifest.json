@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/custom/static/css/main.fce21684.chunk.css",
+    "main.js": "/custom/static/js/main.c100cef5.chunk.js",
+    "main.js.map": "/custom/static/js/main.c100cef5.chunk.js.map",
+    "runtime-main.js": "/custom/static/js/runtime-main.213c91c9.js",
+    "runtime-main.js.map": "/custom/static/js/runtime-main.213c91c9.js.map",
+    "static/css/2.6a68c05d.chunk.css": "/custom/static/css/2.6a68c05d.chunk.css",
+    "static/js/2.aae26a19.chunk.js": "/custom/static/js/2.aae26a19.chunk.js",
+    "static/js/2.aae26a19.chunk.js.map": "/custom/static/js/2.aae26a19.chunk.js.map",
+    "index.html": "/custom/index.html",
+    "precache-manifest.98e67cb0a1a72e4c6e86e36075eb1a16.js": "/custom/precache-manifest.98e67cb0a1a72e4c6e86e36075eb1a16.js",
+    "service-worker.js": "/custom/service-worker.js",
+    "static/css/2.6a68c05d.chunk.css.map": "/custom/static/css/2.6a68c05d.chunk.css.map",
+    "static/css/main.fce21684.chunk.css.map": "/custom/static/css/main.fce21684.chunk.css.map",
+    "static/media/App.scss": "/custom/static/media/footer.f8a76af7.png",
+    "static/media/styles.css": "/custom/static/media/revicons.2feb69cc.eot"
+  }
+}
