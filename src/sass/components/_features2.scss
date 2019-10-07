@@ -1,0 +1,38 @@
+.built-section {
+    display: block;
+    background-image: linear-gradient(rgba(#000,.4), rgba(#000,.4)), 
+    url("../../img/fixed-1.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 8rem 2rem;
+}
+
+.built {
+    padding: 0 6rem;
+    padding-bottom: 6rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-gap: 6rem;
+    align-items: start;
+    justify-content: center;
+    grid-auto-rows: 24rem;
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        color: var(--color-grey-ligh-1);
+        text-align: center;
+        font-size: 3rem;
+        text-shadow: 0.1rem 0.1rem 0.8rem #000;
+        i {
+            color: var(--color-primary);
+            font-size: 7rem;
+        }
+    }
+    &__text {
+        font-weight: 300;
+    }
+}

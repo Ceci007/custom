@@ -1,0 +1,14 @@
+.features {
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 3rem;
+    margin: 0 auto;
+    &__text {
+        font-size: 3.5rem;
+    }
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+}

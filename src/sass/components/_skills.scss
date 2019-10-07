@@ -1,0 +1,40 @@
+.skills-section {
+    display: block;
+    background-color: var(--color-grey-ligh-3);
+    color: var(--color-grey-dark-2);
+    padding: 6rem 0;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, max-content));
+    grid-gap: 3.5rem;
+    align-items: start;
+    justify-content: center;
+    grid-auto-rows: 24rem;
+    &__skill i {
+        font-size: 7rem;
+    }
+    &__skill .count {
+        display: block;
+        color: var(--color-primary);
+        font-size: 3.2rem;
+        font-weight: 700;
+        margin: 1rem 0 0.5rem;
+    }
+    &__skill p {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        & p {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+}

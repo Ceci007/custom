@@ -1,0 +1,65 @@
+.footer {
+    background-image: linear-gradient(rgba(#000,.7), rgba(#000,.7)), 
+    url("../../img/footer.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: var(--color-grey-ligh-2);
+    padding: 8rem 3rem;
+    font-size: 1.6rem;
+    @media only screen and (max-width: $bp-medium) {
+        background-image: linear-gradient(rgba(#000,.7), rgba(#000,.7)), 
+        url("../../img/footer-mobile.png");
+    }
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &__content {
+        grid-column: 1 / 2;
+        padding-right: 2rem;
+        a {
+            color: rgba(#fff,.65);
+            text-decoration: none;
+        }
+        i {
+            font-size: 3rem;
+            margin: 1.8rem 1rem 0 0;
+            color: rgba(#fff,0.65);
+        }
+    }
+    &__form-box {
+        grid-column: 2 / -1;
+    }
+}
+
+.form-control {
+    display: block;
+    font-family: "Open Sans";
+    font-size: 2rem;
+    border-radius: .4rem;
+    padding: 1rem 0;
+    padding-left: 1rem;
+    width: 100%;
+    background-color: rgba(57, 63, 70, 0.65);
+    border: 0.15rem solid rgba(#fff,.6);
+    color: #fff;
+    margin-bottom: 1.3rem;
+    &:focus {
+        outline: none;
+    }
+    &::placeholder {
+        color: rgba(#fff,.6);
+    }
+}
+
+.socket  {
+    width: 100%;
+    text-align: center;
+    grid-column: 1 / -1;
+    hr {
+        border-top: .1rem solid rgba(#fff,.6);
+        margin: 2rem auto;
+    }
+}

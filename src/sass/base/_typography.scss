@@ -1,0 +1,43 @@
+.heading-h1 {
+    font-size: 6rem;
+    color: var(--color-grey-ligh-1);
+    font-weight: 300;
+    text-shadow: 0.1rem 0.1rem 0.8rem #000;
+}
+
+.heading-h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    word-spacing: .6em;
+    letter-spacing: 1rem;
+    color: var(--color-grey-dark-3);
+    &--white {
+        color: var(--color-grey-ligh-1);
+        text-shadow: 0.1rem 0.1rem 0.8rem #000;
+    }
+}
+
+.heading-h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0.1rem 0.1rem 0.8rem #fff;
+    &--white {
+        color: var(--color-grey-ligh-1);
+        text-shadow: 0.1rem 0.1rem 0.8rem #000;
+    }
+}
+
+.heading-h4 {
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.heading-underline {
+    width: 3rem;
+    height: .4rem;
+    background-color: var(--color-primary);
+    margin: 0 auto 2rem;
+  }

@@ -1,0 +1,178 @@
+$bp-largest: 75em; // 1200px
+$bp-large: 56.25em; // 900px
+$bp-medium: 48em;  // 768px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-grey-ligh-1);
+    height: 7.5rem;
+    box-shadow: 0 2rem 6rem rgba(#000,.3);
+    z-index: 100;
+    &__logo {
+        color: var(--color-grey-dark-2);
+        padding-left: 1rem;
+    }
+}
+
+.navbar-nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    align-self: stretch;
+    text-transform: uppercase;
+    @media only screen and (min-width: $bp-large) {
+        & > * {
+            padding: 0 2rem !important;
+            cursor: pointer;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            transition: all .3s;
+        }
+        & > *:hover, &__active {
+            background-color: var(--color-grey-ligh-2);
+        }
+        &__active {
+            cursor: pointer;
+            color: var(--color-grey-dark-1);
+            background-color: var(--color-grey-ligh-2);
+        }
+    }
+    &__nav-item {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        @media only screen and (max-width: $bp-large) {
+            display: none;
+        }
+    }
+    &__link {
+       &:link, &:visited {
+        color: var(--color-grey-dark-2);
+        text-decoration: none;
+       }
+    }
+    &__toggle {
+        @media only screen and (min-width: $bp-large) {
+            display: none;
+        }
+    }
+}
+
+.toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: stretch;
+    height: 3rem;
+    width: 3.5rem;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 400;
+    cursor: pointer;
+    & > * {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        transition: all .3s;
+    }
+    &:focus {
+        outline: none;
+    }
+    &__button {
+        position: fixed;
+        top: .7rem;
+        right: 2rem;
+        cursor: pointer;
+        text-align: center;
+        z-index: 600;
+    }
+    &__checkbox {
+        display: none;
+        visibility: hidden;
+    }
+    &__nav {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 500;
+        opacity: 0;
+        width: 0;
+        transition: all .8s cubic-bezier(.68,-.55,.265,1.55);
+    }
+    &__link {
+        color: var(--color-grey-dark-2);
+        text-decoration: none;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        padding: 2.8rem 0;
+        width: 100%;
+        transition: all .3s ease;
+        &:hover {
+            background-image: linear-gradient(to right bottom, var(--color-primary), 
+            var(--color-secondary));
+            z-index: 400;
+            width: 100%;
+            color: var(--color-grey-ligh-1) !important;
+        }
+    }
+    &__background {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 300;
+        transition: transform .8s cubic-bezier(.86,0,.07,1);
+    }
+    &__checkbox:checked ~ &__background {
+        transform: scale(80);
+    }
+    &__checkbox:checked ~ &__nav {
+        opacity: 1;
+        width: 70%;
+        background-color: rgba(#fff,.8);
+    }
+    &__icon {
+        position: relative;
+        margin-top: 3.5rem;
+        &, &:before, &:after {
+            width: 3rem;
+            height: 2px;
+            background-color: var(--color-grey-dark-2);
+            display: inline-block;
+        }
+        &:before, &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all .3s;
+        }
+        &:before {  top: -.8rem; }
+        &:after { top: .8rem; }
+    }
+    &__checkbox:checked ~ &__button &__icon {
+        background-color: transparent;
+    }
+    &__checkbox:checked ~ &__button &__icon:before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+    &__checkbox:checked ~ &__button &__icon:after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+}
+

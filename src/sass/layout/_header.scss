@@ -1,0 +1,18 @@
+.home {
+    &__landing {
+        background-image: linear-gradient(to right bottom, 
+        rgba(#00F260,.6), rgba(#0575E6,.6)), 
+        url("../../img/background.jpeg");
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        display: flex;
+        height: calc(100vh - 5.5rem);
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

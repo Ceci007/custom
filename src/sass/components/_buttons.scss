@@ -1,0 +1,72 @@
+.btn-white {
+    text-decoration: none;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    background-color: transparent;
+    color: var(--color-grey-ligh-1);
+    border: .3rem solid var(--color-grey-ligh-1);
+    padding: 1rem 3rem;
+    border-radius: .4rem;
+    box-shadow:  0 2rem 6rem rgba(#000,.5);
+    transition: all .3s ease-out;
+    &:hover {
+        background-color: rgba(#fff,.1);
+        border: .3rem solid var(--color-grey-ligh-1); 
+    }
+}
+
+.btn-grey {
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--color-grey-ligh-1);
+    background-color: var(--color-grey-dark-3);
+    padding: 1rem 3rem;
+    border-radius: .4rem;
+    box-shadow: var(--shadow-dark);
+    transition: all .3s ease-out;
+    &:hover {
+        background-color: var(--color-grey-dark-2);
+        box-shadow:  0 2rem 6rem rgba(#000,.3);
+    }
+}
+
+.btn-primary {
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--color-grey-ligh-1);
+    background-image: linear-gradient(to right, 
+    var(--color-primary), var(--color-secondary));
+    padding: 1rem 3rem;
+    border-radius: .4rem;
+    box-shadow: var(--shadow-dark);
+    transition: all .3s ease-out;
+    &:hover {
+        background-image: linear-gradient(to right, 
+        var(--color-primary-dark), var(--color-secondary-dark));
+        box-shadow:  0 2rem 6rem rgba(#000,.3);
+    }
+}
+
+.submit-white {
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: rgba(#fff,.6);
+    border: .2rem solid rgba(#fff,.6);
+    padding: 1rem 3rem;
+    border-radius: .4rem;
+    box-shadow:  0 2rem 6rem rgba(#000,.5);
+    transition: all .3s ease-out;
+    &:hover {
+        background-color: rgba(#fff,.1);
+        border: .2rem solid rgba(#fff,1);
+        color: #fff;
+    }
+}

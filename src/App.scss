@@ -1,0 +1,23 @@
+@import "sass/abstract/mixins"; 
+@import "sass/abstract/variables"; 
+
+@import "sass/base/animation"; 
+@import "sass/base/base"; 
+@import "sass/base/typography"; 
+@import "sass/base/utilities"; 
+
+@import "sass/components/buttons"; 
+@import "sass/components/clientsCard";
+@import "sass/components/features1";
+@import "sass/components/features2";
+@import "sass/components/featuresHeader";
+@import "sass/components/pricing";
+@import "sass/components/scrollbar";
+@import "sass/components/skills";
+@import "sass/components/teamCard";
+
+@import "sass/layout/footer";
+@import "sass/layout/header";
+@import "sass/layout/navbar";
+
+@import "sass/pages/home";

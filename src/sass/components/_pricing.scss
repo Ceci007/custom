@@ -1,0 +1,89 @@
+.pricing-section {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 6rem 7rem;
+}
+
+.pricing-1 {
+    display: grid;
+    padding: 0 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 6rem;
+    align-items: start;
+    justify-content: center;
+    grid-auto-rows: 45rem;
+    &__content {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-row-gap: 1.5rem;
+        grid-column-gap: 2.5rem;
+        padding: 3rem;
+        align-items: space-between;
+        justify-items: center;
+        border-top: .3rem solid var(--color-primary);
+        box-shadow: 0 0 0.8rem rgba(#000,.1);
+        overflow: hidden;
+        position: relative;
+        & > * {
+            font-size: 1.7rem;
+            grid-column: 1 / -1;
+            justify-content: center;
+            justify-items: center;
+        }
+        & p {
+            margin-top: 1.3rem;
+        }
+        & h4 {
+            font-size: 1.6rem;
+            padding: .5rem 0;
+            text-align: center;
+        }
+        & h3 {
+            text-transform: uppercase;
+        }
+    }
+    &__box {
+        box-shadow: 0 2rem 6rem rgba(#000,.3);
+        border-radius: .7rem;
+        height: 100%;
+        transition: transform 0.7s ease;
+        display: grid;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &--h3 {
+        padding: 1rem;
+        border-bottom: .2rem solid rgba(#000,.1);
+    }
+    & .flex-container {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        padding-bottom: 3rem;
+        &__price {
+            font-size: 3rem;
+            font-weight: 300;
+            text-align: center;
+            color: var(--color-primary);
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.ribbon {
+    background-color: var(--color-primary);
+    color: #fff;
+    width: 15rem;
+    height: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: .4rem;
+    position: absolute;
+    right: -7rem;
+    top: 1.6rem;
+    transform: rotate(45deg);
+    box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.25);
+  }

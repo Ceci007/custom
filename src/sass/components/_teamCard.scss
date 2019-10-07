@@ -1,0 +1,78 @@
+.team-section {
+    background-image: linear-gradient(rgba(#fff,.7), rgba(#fff,.7))
+    , url("../../img/fixed-2.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 6rem 0;
+    object-fit: cover;
+}
+
+.team-card {
+    border-radius: .7rem;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 1rem 3rem rgba(#000, 0.4);
+    transition: transform 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    width: 35rem;
+    &:hover {
+        transform: scale(0.95);
+    }
+    &  h4 {
+        font-weight: 700;
+        font-size: 2rem;
+        text-align: center;
+        border-bottom: 0.1rem solid rgba(#000,.1);
+        padding: 1rem 0;
+    }
+    & h5 {
+        color: var(--color-primary);
+        font-size: 2rem;
+        font-weight: 300;
+        text-align: center;
+        padding: 1rem 0;
+        padding-top: 1.5rem;
+    } 
+    & p {
+        border-top: 0.1rem solid rgba(#000,.1);
+        border-bottom: 0.1rem solid rgba(#000,.1);
+        padding: 1rem;
+        margin: 1rem 0 1.5rem;
+        padding: 2rem;
+    } 
+    & i {
+        color: var(--color-primary) !important;
+        font-size: 3rem;
+        padding: 2rem 1rem;
+        padding-bottom: 3rem;
+    }
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.card-img-top {
+    height: 30rem;
+    object-fit: cover;
+}
+
+.card-body {
+    & > * {
+        font-size: 1.5rem;
+    }
+    background-color: #fff;
+}
+
+.react-multi-carousel-track {
+    margin-bottom: 6rem !important;
+}
+
+.react-multiple-carousel__arrow { z-index: 20 !important; }

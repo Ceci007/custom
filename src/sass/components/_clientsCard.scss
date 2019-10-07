@@ -1,0 +1,53 @@
+.clients-section {
+    padding: 4rem 0;
+    padding-top: 6rem;
+}
+
+.clients-card {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: repeat(2, min-content);
+    justify-items: center;
+    align-items: center;
+    &__img {
+        grid-row: 1 / -1;
+        grid-column: 1 / 2;
+        object-fit: cover;
+        border-radius: 100%;
+        margin-right: -5rem;
+        margin-left: 3rem;
+        margin-top: -5rem;
+    }
+    &__body {
+        grid-row: 1 / -1;
+        grid-column: 2 / -1;
+        width: 80%;
+        padding-top: 3rem;
+        & > * {
+            font-size: 1.6rem;
+        }
+        blockquote {
+            display: grid;
+            grid-template-columns: min-content 1fr;
+            grid-column: 2 / -1;
+            padding: 3rem;
+        }
+        blockquote::before {
+            content: "\f10d"; 
+            font-family: FontAwesome;
+            margin: 1rem;
+            color: var(--color-primary);
+            font-weight: 900;
+            grid-column: 1 / 2;
+            font-size: 4rem;
+            margin-top: -4rem;
+        }
+        p {
+            padding: 3rem;
+        }
+    }
+}
+
+.clients-hr {
+    border-top: 0.05rem solid var(--color-primary);
+  }

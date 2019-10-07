@@ -1,0 +1,21 @@
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+html {
+    font-size: 62.5%;
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: var(--color-grey-dark-3);
+    overflow-x: hidden;
+}
