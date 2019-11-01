@@ -22,6 +22,7 @@ class Skills extends Component {
             <h3 className="heading-h3 margin-bottom-small text-center">Our Skills</h3>
             <div className="heading-underline margin-bottom-huge" />
             </ScrollAnimation>
+            <div className="skills-box">
             <div className="skills text-center">
                 <div className="skills__skill">
                   <i className="fas fa-clock"></i>
@@ -59,6 +60,7 @@ class Skills extends Component {
                   </VisibilitySensor>
                   <p>Resources</p>
                 </div>
+            </div>
             </div>
             <ScrollAnimation animateIn="fadeInUp">
             <div className="skills__text">

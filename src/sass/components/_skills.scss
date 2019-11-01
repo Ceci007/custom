@@ -9,8 +9,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, max-content));
     grid-gap: 3.5rem;
-    align-items: start;
+    align-items: center;
     justify-content: center;
+    justify-items: center;
     grid-auto-rows: 24rem;
     &__skill i {
         font-size: 7rem;
